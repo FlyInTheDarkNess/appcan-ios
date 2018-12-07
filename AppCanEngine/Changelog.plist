@@ -6,6 +6,7 @@
 	<array>
 		<string>修复uexWindow.close在浮动窗口执行时，也会关闭所在主窗口的问题。</string>
 		<string>进一步优化主应用补丁包更新逻辑，防止一些小概率崩溃问题。</string>
+		<string>侧滑页面刷新问题修改</string>
 	</array>
 	<key>4.1.13</key>
 	<array>
