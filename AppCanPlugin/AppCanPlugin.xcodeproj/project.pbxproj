@@ -488,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "pwd\n\ncp MFAPPVPN20181022.mobileprovision /Library/MobileDevice/Provisioning\\ Profiles/\n\necho copy mobileprovision finished";
+			shellScript = "pwd\n\ncp MFAPPVPNPAD20181229.mobileprovision /Library/MobileDevice/Provisioning\\ Profiles/\n\necho copy mobileprovision finished";
 		};
 		423F98A81DB77076007A382B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
