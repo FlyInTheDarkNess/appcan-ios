@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B57ECE22A8EC1D00C0DD2F /* UEX_GCD_Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B57ECC22A8EC1D00C0DD2F /* UEX_GCD_Manager.h */; };
+		11B57ECF22A8EC1D00C0DD2F /* UEX_GCD_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B57ECD22A8EC1D00C0DD2F /* UEX_GCD_Manager.m */; };
 		420F733C1E4B254800B4C626 /* Changelog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420F733B1E4B254800B4C626 /* Changelog.plist */; };
 		4245EC961DED18C900C07B2D /* ACEBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4245EC941DED18C900C07B2D /* ACEBasicAnimation.h */; };
 		4245EC971DED18C900C07B2D /* ACEBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4245EC951DED18C900C07B2D /* ACEBasicAnimation.m */; };
@@ -276,6 +278,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B57ECC22A8EC1D00C0DD2F /* UEX_GCD_Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UEX_GCD_Manager.h; sourceTree = "<group>"; };
+		11B57ECD22A8EC1D00C0DD2F /* UEX_GCD_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UEX_GCD_Manager.m; sourceTree = "<group>"; };
 		333DFFF91A42B9CA00F501B3 /* ACEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEBaseViewController.h; sourceTree = "<group>"; };
 		333DFFFA1A42B9CA00F501B3 /* ACEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEBaseViewController.m; sourceTree = "<group>"; };
 		333DFFFB1A42B9CA00F501B3 /* ACEUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEUINavigationController.h; sourceTree = "<group>"; };
@@ -692,6 +696,8 @@
 		5AAA858D18B1B93D000D7600 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				11B57ECC22A8EC1D00C0DD2F /* UEX_GCD_Manager.h */,
+				11B57ECD22A8EC1D00C0DD2F /* UEX_GCD_Manager.m */,
 				426040861DEC297D00B49B5C /* animation */,
 				3356F9471A48517200F58330 /* des */,
 				333DFFDB1A4183B600F501B3 /* ACE */,
@@ -1089,6 +1095,7 @@
 				4245EC961DED18C900C07B2D /* ACEBasicAnimation.h in Headers */,
 				42F787EA1D950B5D0094AA05 /* MMDrawerController.h in Headers */,
 				69736110201F37B3008CC9F4 /* ACEMPBottomMenuBgView.h in Headers */,
+				11B57ECE22A8EC1D00C0DD2F /* UEX_GCD_Manager.h in Headers */,
 				42F787EB1D950B5D0094AA05 /* SBJsonBase.h in Headers */,
 				42F787EC1D950B5D0094AA05 /* UIImage+MultiFormat.h in Headers */,
 				42F787EE1D950B5D0094AA05 /* OpenUDID.h in Headers */,
@@ -1339,6 +1346,7 @@
 				42F787841D950B5D0094AA05 /* SDWebImageDownloaderOperation.m in Sources */,
 				426040961DEC2BB300B49B5C /* ACEAnimation.m in Sources */,
 				69A678FE20AABB4000CBFDCB /* ACETransitionView.m in Sources */,
+				11B57ECF22A8EC1D00C0DD2F /* UEX_GCD_Manager.m in Sources */,
 				42F787851D950B5D0094AA05 /* UIImage+WebP.m in Sources */,
 				42F787871D950B5D0094AA05 /* ASIDataDecompressor.m in Sources */,
 				42F787881D950B5D0094AA05 /* SpecConfigParser.m in Sources */,
