@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		eDcXDFQYtFMC57gPbUoop+fJ/VQ=
+		Cs5Bgihs9FLbIujLPR1hOMRyDII=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zlIJZxGQ+Hl1HuQVb8U3OC9xleM=
+		j3DWT46fLT8sJyIdIOYU3t4d6b0=
 		</data>
 		<key>LocalEncryptPolicy.json</key>
 		<data>
@@ -146,19 +146,19 @@
 		</data>
 		<key>UUMOSTouchIdViewController.nib</key>
 		<data>
-		DXqGjL5BG6yt6p6bKyiX4lVfVaE=
+		9PncngjOZgwLIR1WZpxvG7lwFwY=
 		</data>
 		<key>UUMOSUnlockViewController.nib</key>
 		<data>
-		+AjpxjtguzwY39W+4WpQUDP9TNc=
+		hObYTQ3dCf5sp9oVR6htef5wjRE=
 		</data>
 		<key>UUUnlockViewController.nib</key>
 		<data>
-		oxc8Y1+nC2T2QMAIBXNj9+mFkBQ=
+		rShscvJb02WbdKvUP/fSFn5BxCg=
 		</data>
 		<key>UUUnlockViewController_iPad.nib</key>
 		<data>
-		LgPsAQHJCn8H/HaViKONKpo47mI=
+		xPWK3WlGfz16lpUB5ute5Qj9rwc=
 		</data>
 		<key>VPNToast.plist</key>
 		<data>
@@ -317,11 +317,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eDcXDFQYtFMC57gPbUoop+fJ/VQ=
+			Cs5Bgihs9FLbIujLPR1hOMRyDII=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Ng8YLGyzjXzasA5kNXzhVUhadVijhZfEdUvMd8Vtnc=
+			2utlVZHeNB4SlCz7VW5ANhDa9oylb6L7MLn517gFEZc=
 			</data>
 		</dict>
 		<key>LocalEncryptPolicy.json</key>
@@ -691,44 +691,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DXqGjL5BG6yt6p6bKyiX4lVfVaE=
+			9PncngjOZgwLIR1WZpxvG7lwFwY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vfopIOYo3pG/2PgWJqn0qJapJnKtZSKKrSJkAjpR3LY=
+			gWaI8JsTSynUGoqLTuCBO5VPNHFJ4eVrraVI7wv/+1k=
 			</data>
 		</dict>
 		<key>UUMOSUnlockViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+AjpxjtguzwY39W+4WpQUDP9TNc=
+			hObYTQ3dCf5sp9oVR6htef5wjRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SNxHjRFrkqrIHOxnc2n5wDBCo5pkV/tEhgW8Hd0FvPw=
+			O7spO7jYqofE0GVW2ew/VLS17hepP2MtPKa8ae1P+Xw=
 			</data>
 		</dict>
 		<key>UUUnlockViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oxc8Y1+nC2T2QMAIBXNj9+mFkBQ=
+			rShscvJb02WbdKvUP/fSFn5BxCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kqOHbZUW06fYFuzk78q5FtkuLIeySDpDQdGIBtChNNY=
+			LQwl5iq37isLgwiECgGPb5NrWljppN0jsqhFghhEZJ0=
 			</data>
 		</dict>
 		<key>UUUnlockViewController_iPad.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LgPsAQHJCn8H/HaViKONKpo47mI=
+			xPWK3WlGfz16lpUB5ute5Qj9rwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6tErMQlgHzITsRfXT44SGX//GM5Ry79cF2axwH8UhSU=
+			njTntFkHomdfeolcntAr2QaERIqEqTgdGH1DAVAGZKk=
 			</data>
 		</dict>
 		<key>VPNToast.plist</key>
@@ -1123,7 +1123,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^.*</key>
+		<key>^</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -1154,12 +1154,24 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -1195,6 +1207,13 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
