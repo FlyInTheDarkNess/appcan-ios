@@ -241,6 +241,17 @@
     
 }
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    //    if (self.isRotation) {
+    //        //可以针对不同的界面创建不同的值，进行返回
+    //        return UIInterfaceOrientationMaskLandscape;
+    //    }
+    return UIInterfaceOrientationMaskAll;
+}
+
+
+
 - (void)setupRootViewController{
     _drawerController = [[ACEDrawerViewController alloc] initWithCenterViewController:AppCanEngine.mainWidgetController
                                                              leftDrawerViewController:nil

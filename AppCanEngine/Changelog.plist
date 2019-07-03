@@ -8,6 +8,7 @@
 		<string>修改InfoPlist.strings文件，配置聊天系统提示消息内容</string>
 		<string>益泰uexIMEx适配定制引擎</string>
 		<string>指掌易新的SDK集成</string>
+		<string>指掌易SDK更新，修复定位闪退，旋转屏幕问题</string>
 	</array>
 	<key>4.2.17</key>
 	<array>
