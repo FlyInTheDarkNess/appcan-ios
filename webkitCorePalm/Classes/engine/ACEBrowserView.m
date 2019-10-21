@@ -224,8 +224,8 @@ const CGFloat loadingVisibleHeight = 60.0f;
 
 - (void)setView {
     self.currentUrl = nil;
-	self.dataDetectorTypes = UIDataDetectorTypeNone;
-	self.allowsInlineMediaPlayback = NO;
+//    self.dataDetectorTypes = UIDataDetectorTypeNone;
+//    self.allowsInlineMediaPlayback = NO;
 	[self setDelegate:mcBrwWnd];
 	[self setScalesPageToFit:NO];
 	[self setMultipleTouchEnabled:NO];
@@ -337,7 +337,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 	
 	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1){
-        [super scrollViewDidScroll:scrollView];
+//        [super scrollViewDidScroll:scrollView];
         
     }
 	
@@ -465,7 +465,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    [super scrollViewDidEndDecelerating:scrollView];
+//    [super scrollViewDidEndDecelerating:scrollView];
     
     
     if (scrollView.contentOffset.y <= 0) {
@@ -517,7 +517,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
 	
 	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1){
-        [super scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
+//        [super scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
         
     }
 	
@@ -539,7 +539,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
 }
 
 -(NSURL*)curUrl{
-    return [self.request URL] ?: self.currentUrl;
+//    return [self.request URL] ?: self.currentUrl;
 }
 
 - (void)loadExeJS{
@@ -588,7 +588,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
     if (inWndType == ACEEBrowserViewTypeSlibingBottom) {
         [self registerKeyboardListener:nil];
     }
-    self.keyboardDisplayRequiresUserAction = NO;
+//    self.keyboardDisplayRequiresUserAction = NO;
 
     isSwiped = NO;
     //向右轻扫事件
@@ -781,7 +781,7 @@ const CGFloat loadingVisibleHeight = 60.0f;
             }
             
             //2015.5.18 新增onPopoverLoadFinishInRootWnd(name,url)接口
-            initStr = [[NSString alloc] initWithFormat:@"if(uexWindow.onPopoverLoadFinishInRootWnd){uexWindow.onPopoverLoadFinishInRootWnd(\"%@\",\"%@\");}",self.muexObjName,[self.request.URL absoluteString]];
+            initStr = [[NSString alloc] initWithFormat:@"if(uexWindow.onPopoverLoadFinishInRootWnd){uexWindow.onPopoverLoadFinishInRootWnd(\"%@\",\"%@\");}",self.muexObjName,[self.URL absoluteString]];
             //[EUtility evaluatingJavaScriptInRootWnd:initStr];
             //修复回调页面错误问题，现在可以正确的回调给当前子应用的root页面
             [self.meBrwCtrler.rootView stringByEvaluatingJavaScriptFromString:initStr];

@@ -32,7 +32,7 @@
 @class EBrowserHistory;
 @class EBrowserHistoryEntry;
 @class ACEJSCHandler;
-@interface ACEBrowserView : UIWebView <UIGestureRecognizerDelegate>{
+@interface ACEBrowserView : IMYWebView <UIGestureRecognizerDelegate>{
 	int mFlag;
 	int mTopBounceState;
 	int mBottomBounceState;

@@ -178,7 +178,7 @@
     
     if(_userAgent == nil) {
         
-        UIWebView * sampleWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+        IMYWebView * sampleWebView = [[IMYWebView alloc] initWithFrame:CGRectZero];
         NSString * originalUserAgent = [sampleWebView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
         NSString * subS1 = @"AppleWebKit/";
         NSRange range1 = [originalUserAgent rangeOfString:subS1];

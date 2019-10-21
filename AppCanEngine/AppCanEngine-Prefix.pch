@@ -8,5 +8,7 @@
     #import <AppCanKit/AppCanKit.h>
     #import "AppCanEnginePrivate.h"
     #import "ACELocalization.h"
+    #import "IMYWebView.h"
+    #import <WebKit/WebKit.h>
 #endif
 //#define NSLog 

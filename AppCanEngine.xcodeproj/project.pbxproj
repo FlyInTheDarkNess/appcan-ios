@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1185C5502359BB5300C23EE3 /* IMYWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1185C54E2359BB5200C23EE3 /* IMYWebView.m */; };
+		1185C5512359BB5300C23EE3 /* IMYWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1185C54F2359BB5200C23EE3 /* IMYWebView.h */; };
 		420F733C1E4B254800B4C626 /* Changelog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420F733B1E4B254800B4C626 /* Changelog.plist */; };
 		4245EC961DED18C900C07B2D /* ACEBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4245EC941DED18C900C07B2D /* ACEBasicAnimation.h */; };
 		4245EC971DED18C900C07B2D /* ACEBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4245EC951DED18C900C07B2D /* ACEBasicAnimation.m */; };
@@ -275,6 +277,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1185C54E2359BB5200C23EE3 /* IMYWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMYWebView.m; sourceTree = "<group>"; };
+		1185C54F2359BB5200C23EE3 /* IMYWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMYWebView.h; sourceTree = "<group>"; };
 		333DFFF91A42B9CA00F501B3 /* ACEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEBaseViewController.h; sourceTree = "<group>"; };
 		333DFFFA1A42B9CA00F501B3 /* ACEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEBaseViewController.m; sourceTree = "<group>"; };
 		333DFFFB1A42B9CA00F501B3 /* ACEUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEUINavigationController.h; sourceTree = "<group>"; };
@@ -689,6 +693,8 @@
 		5AAA858D18B1B93D000D7600 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1185C54F2359BB5200C23EE3 /* IMYWebView.h */,
+				1185C54E2359BB5200C23EE3 /* IMYWebView.m */,
 				426040861DEC297D00B49B5C /* animation */,
 				3356F9471A48517200F58330 /* des */,
 				333DFFDB1A4183B600F501B3 /* ACE */,
@@ -1121,6 +1127,7 @@
 				42F788131D950B5D0094AA05 /* ACEWebViewController.h in Headers */,
 				42F788141D950B5D0094AA05 /* NSData+ImageContentType.h in Headers */,
 				427890771DEEB57700B8476D /* ACEViewControllerAnimator.h in Headers */,
+				1185C5512359BB5300C23EE3 /* IMYWebView.h in Headers */,
 				42F788161D950B5D0094AA05 /* EBrowserToolBar.h in Headers */,
 				42F788171D950B5D0094AA05 /* UIButton+WebCache.h in Headers */,
 				42F788181D950B5D0094AA05 /* FBEncryptorAES.h in Headers */,
@@ -1317,6 +1324,7 @@
 				42F787701D950B5D0094AA05 /* SDImageCache.m in Sources */,
 				42F787721D950B5D0094AA05 /* ACEPluginParser.m in Sources */,
 				427A79201DDE95B800E85BA4 /* ACESubwidgetManager.m in Sources */,
+				1185C5502359BB5300C23EE3 /* IMYWebView.m in Sources */,
 				42F787731D950B5D0094AA05 /* ioapi.c in Sources */,
 				42F787751D950B5D0094AA05 /* ASIDownloadCache.m in Sources */,
 				69736115201F37B3008CC9F4 /* ACEMPWindowOptions.m in Sources */,

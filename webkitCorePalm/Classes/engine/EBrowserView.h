@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger,ACEEBrowserViewType){
 - (NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;
 
 @property (nonatomic) BOOL scalesPageToFit;
-@property (nonatomic) UIDataDetectorTypes dataDetectorTypes;
+@property (nonatomic) WKDataDetectorTypes dataDetectorTypes;
 @property (nonatomic) BOOL allowsInlineMediaPlayback;
 @property (nonatomic) BOOL mediaPlaybackRequiresUserAction;
 @property (nonatomic) BOOL mediaPlaybackAllowsAirPlay;

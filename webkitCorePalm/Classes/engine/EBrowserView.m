@@ -260,7 +260,7 @@
 
 -(NSURLRequest *)request
 {
-    return [_meBrowserView request];
+    return [_meBrowserView currentRequest];
 }
 
 -(BOOL)canGoBack
@@ -292,45 +292,45 @@
 
 
 //@property (nonatomic) UIDataDetectorTypes dataDetectorTypes;
--(UIDataDetectorTypes)dataDetectorTypes
+-(WKDataDetectorTypes)dataDetectorTypes
 {
-    return [_meBrowserView dataDetectorTypes];
+    return _meBrowserView.configuration.dataDetectorTypes;
 }
 
-- (void)setDataDetectorTypes:(UIDataDetectorTypes)dataDetectorTypes
+- (void)setDataDetectorTypes:(WKDataDetectorTypes)dataDetectorTypes
 {
-    [_meBrowserView setDataDetectorTypes:dataDetectorTypes];
+    [_meBrowserView.configuration setDataDetectorTypes:dataDetectorTypes];
 }
 
 //@property (nonatomic) BOOL allowsInlineMediaPlayback;
 -(BOOL)allowsInlineMediaPlayback
 {
-    return [_meBrowserView allowsInlineMediaPlayback];
+    return _meBrowserView.configuration.allowsInlineMediaPlayback;
 }
 
 - (void)setAllowsInlineMediaPlayback:(BOOL)allowsInlineMediaPlayback
 {
-    [_meBrowserView setAllowsInlineMediaPlayback:allowsInlineMediaPlayback];
+    [_meBrowserView.configuration setAllowsInlineMediaPlayback:allowsInlineMediaPlayback];
 }
 //@property (nonatomic) BOOL mediaPlaybackRequiresUserAction;
 -(BOOL)mediaPlaybackRequiresUserAction
 {
-    return [_meBrowserView mediaPlaybackRequiresUserAction];
+    return _meBrowserView.configuration.mediaPlaybackRequiresUserAction;
 }
 
 - (void)setMediaPlaybackRequiresUserAction:(BOOL)mediaPlaybackRequiresUserAction
 {
-    [_meBrowserView setMediaPlaybackRequiresUserAction:mediaPlaybackRequiresUserAction];
+    [_meBrowserView.configuration setMediaPlaybackRequiresUserAction:mediaPlaybackRequiresUserAction];
 }
 //@property (nonatomic) BOOL mediaPlaybackAllowsAirPlay;
 -(BOOL)mediaPlaybackAllowsAirPlay
 {
-    return [_meBrowserView mediaPlaybackAllowsAirPlay];
+    return _meBrowserView.configuration.mediaPlaybackAllowsAirPlay;
 }
 
 - (void)setMediaPlaybackAllowsAirPlay:(BOOL)mediaPlaybackAllowsAirPlay
 {
-    [_meBrowserView setMediaPlaybackAllowsAirPlay:mediaPlaybackAllowsAirPlay];
+    [_meBrowserView.configuration setMediaPlaybackAllowsAirPlay:mediaPlaybackAllowsAirPlay];
 }
 //***********************************************************
 
@@ -349,7 +349,11 @@
 - (void)loadData:(NSData *)data MIMEType:(NSString *)MIMEType textEncodingName:(NSString *)textEncodingName baseURL:(NSURL *)baseURL
 {
     if (_meBrowserView) {
+        [_meBrowserView loadData:data MIMEType:MIMEType characterEncodingName:textEncodingName baseURL:baseURL];
+        //替换WKWebView 方法替换
+        /*
         [_meBrowserView loadData:data MIMEType:MIMEType textEncodingName:textEncodingName baseURL:baseURL];
+         */
     }
 }
 

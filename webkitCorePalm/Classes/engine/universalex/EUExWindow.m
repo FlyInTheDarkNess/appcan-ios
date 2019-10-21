@@ -3881,7 +3881,12 @@ static NSString *const kUexWindowValueDictKey = @"uexWindow.valueDict";
 - (void)setInlineMediaPlaybackEnable:(NSMutableArray *)inArguments{
     ACArgsUnpack(NSNumber *enabled) = inArguments;
     UEX_PARAM_GUARD_NOT_NIL(enabled);
+    //是否允许内联(YES)或使用本机全屏控制器(NO)，默认是NO。
+    self.EBrwView.meBrowserView.configuration.allowsInlineMediaPlayback = enabled.boolValue;
+    //升级WKWebView属性变化
+    /*
     self.EBrwView.meBrowserView.allowsInlineMediaPlayback = enabled.boolValue;
+     */
 }
 
 

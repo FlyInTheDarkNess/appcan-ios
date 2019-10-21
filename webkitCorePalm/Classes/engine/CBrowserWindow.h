@@ -19,5 +19,5 @@
 
 @class EBrowserWindow;
 
-@interface CBrowserWindow : UIWebView<UIWebViewDelegate> 
+@interface CBrowserWindow : IMYWebView<UIWebViewDelegate> 
 @end

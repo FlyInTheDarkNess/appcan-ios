@@ -9,16 +9,13 @@
 #import "IMYWebView.h"
 
 #import <TargetConditionals.h>
-#import <WebKit/WebKit.h>
 #import <dlfcn.h>
 
 @interface IMYWebView () <UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 
-@property (nonatomic, assign) double estimatedProgress;
 @property (nonatomic, strong) NSURLRequest* originRequest;
 @property (nonatomic, strong) NSURLRequest* currentRequest;
 
-@property (nonatomic, copy) NSString* title;
 
 @end
 
@@ -109,16 +106,6 @@
 }
 - (void)observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context
 {
-    if ([keyPath isEqualToString:@"estimatedProgress"]) {
-        self.estimatedProgress = [change[NSKeyValueChangeNewKey] doubleValue];
-    }
-    else if ([keyPath isEqualToString:@"title"]) {
-        self.title = change[NSKeyValueChangeNewKey];
-    }
-    else {
-        [self willChangeValueForKey:keyPath];
-        [self didChangeValueForKey:keyPath];
-    }
 }
 - (void)initUIWebView
 {
@@ -157,7 +144,6 @@
 
 - (void)webViewDidFinishLoad:(UIWebView*)webView
 {
-    self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if (self.originRequest == nil) {
         self.originRequest = webView.request;
     }

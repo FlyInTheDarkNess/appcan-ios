@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @protocol WKScriptMessageHandler;
 @class IMYWebView, JSContext;
@@ -22,7 +23,7 @@
 @end
 
 ///无缝切换UIWebView   会根据系统版本自动选择 使用WKWebView 还是  UIWebView
-@interface IMYWebView : UIView
+@interface IMYWebView : WKWebView
 
 ///使用UIWebView
 - (instancetype)initWithFrame:(CGRect)frame usingUIWebView:(BOOL)usingUIWebView;
@@ -56,7 +57,6 @@
 
 @property (nonatomic, readonly, copy) NSString* title;
 @property (nonatomic, readonly) NSURLRequest* currentRequest;
-@property (nonatomic, readonly) NSURL* URL;
 
 @property (nonatomic, readonly, getter=isLoading) BOOL loading;
 @property (nonatomic, readonly) BOOL canGoBack;
